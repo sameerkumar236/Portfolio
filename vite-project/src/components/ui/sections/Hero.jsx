@@ -58,9 +58,9 @@ export default function Hero() {
         {/* Hero Heading */}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mt-4 leading-snug sm:leading-tight text-white">
           I'm Sameer{" "}
-          <span className="text-red-500 ">
+          <span className="text-red-800 ">
             {text}
-            <span className="text-red-400 animate-pulse">|</span>
+            <span className="text-red-500 animate-pulse">|</span>
           </span>
           <br />
           Building Modern Web Applications.
