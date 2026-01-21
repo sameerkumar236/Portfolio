@@ -41,14 +41,14 @@ export default function Resume() {
               />
 
               <TimelineItem
-                year="2025"
+                year="2025-2026"
                 title="Full-Stack Development course"
                 subtitle="Dice Academy"
                 desc="Learned modern JavaScript, React,Expressjs,MongoDB and responsive UI patterns through real-world projects."
               />
 
               <TimelineItem
-                year="2024"
+                year="2023-2024"
                 title="English Speaking Course"
                 subtitle="Freedom Employability Academy"
                 desc="Learned English speaking and Personality Development."

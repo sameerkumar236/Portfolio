@@ -6,6 +6,8 @@ import {
   FileText,
   Grid,
   Mail,
+  Github,
+  Linkedin,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -26,7 +28,6 @@ const menuItems = [
 
 export default function MobileMenu() {
   const scrollToSection = (id) => {
-    // ⏱️ wait for sheet close animation
     setTimeout(() => {
       const section = document.getElementById(id);
       if (section) {
@@ -35,13 +36,12 @@ export default function MobileMenu() {
           block: "start",
         });
       }
-    }, 250); // 👈 important delay
+    }, 250);
   };
 
   return (
     <div className="fixed top-4 right-4 z-50 lg:hidden">
       <Sheet>
-        {/* ☰ MENU BUTTON */}
         <SheetTrigger asChild>
           <Button
             variant="ghost"
@@ -52,19 +52,18 @@ export default function MobileMenu() {
           </Button>
         </SheetTrigger>
 
-        {/* SLIDE MENU */}
         <SheetContent
           side="right"
           hideCloseButton
-          className="bg-black text-white w-72 p-6"
+          className="bg-black text-white w-72 p-6 flex flex-col"
         >
           {/* HEADER */}
-          <div className="flex items-center justify-between mb-8">
+          <div className="mb-8">
             <h2 className="text-lg font-semibold">Menu</h2>
           </div>
 
           {/* MENU ITEMS */}
-          <nav className="flex flex-col gap-4">
+          <nav className="flex flex-col gap-4 flex-1">
             {menuItems.map((item) => (
               <SheetClose asChild key={item.id}>
                 <button
@@ -77,6 +76,29 @@ export default function MobileMenu() {
               </SheetClose>
             ))}
           </nav>
+
+          {/* SOCIAL LINKS */}
+          <div className="border-t border-zinc-800 pt-4 flex gap-4">
+            <a
+              href="https://github.com/sameerkumar236"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-zinc-400 hover:text-white transition"
+            >
+              <Github size={18} />
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/sameer-kumar-03b2b3326/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-zinc-400 hover:text-white transition"
+            >
+              <Linkedin size={18} />
+              LinkedIn
+            </a>
+          </div>
         </SheetContent>
       </Sheet>
     </div>

@@ -12,15 +12,26 @@ import Contact from "./components/ui/sections/Contact";
 
 export default function App() {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="min-h-screen bg-black text-white">
+      
+      {/* Mobile only */}
       <MobileMenu />
+
+      {/* Desktop only */}
       <Sidebar />
       <RightNavbar />
 
-      <main className="px-6 py-10 lg:ml-[22rem]">
-        {/* 🔥 CENTER WRAPPER */}
-        <div className="max-w-[880px] mx-auto relative top-5">
-          
+      {/* MAIN CONTENT */}
+      <main
+        className="
+          px-4 sm:px-6
+          pt-24
+          lg:ml-[22rem]
+          lg:mr-24
+        "
+      >
+        {/* CENTER WRAPPER */}
+        <div className="max-w-[880px] mx-auto space-y-24">
           <Hero />
           <Stats />
           <Projects />

@@ -70,7 +70,7 @@ export default function Contact() {
             required
           />
 
-          <Button type="submit" className="mt-4">
+          <Button type="submit" className="mt-4 mb-8">
             Send Message
           </Button>
         </form>
