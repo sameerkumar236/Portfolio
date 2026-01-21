@@ -25,7 +25,7 @@ export default function Sidebar() {
         lg:top-5
         lg:left-4
         lg:w-80
-        lg:h-[calc(85vh-2.5rem)]
+        lg:h-[calc(80vh-2.5rem)]
 
         bg-zinc-900
         border border-zinc-800
