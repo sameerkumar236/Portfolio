@@ -20,14 +20,12 @@ export default function Hero() {
 
     const timeout = setTimeout(() => {
       if (!isDeleting) {
-        // ✍️ typing
         setText(currentRole.substring(0, text.length + 1));
 
         if (text === currentRole) {
           setTimeout(() => setIsDeleting(true), 1200);
         }
       } else {
-        // 🧹 deleting
         setText(currentRole.substring(0, text.length - 1));
 
         if (text === "") {
@@ -55,7 +53,6 @@ export default function Hero() {
           Introduction
         </span>
 
-        {/* Hero Heading */}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mt-4 leading-snug sm:leading-tight text-white">
           I'm Sameer{" "}
           <span className="text-red-800 ">
@@ -66,7 +63,7 @@ export default function Hero() {
           Building Modern Web Applications.
         </h1>
 
-        {/* Buttons */}
+       
         <div className="flex gap-4 mt-6">
           <Button onClick={scrollToProjects}>My Projects</Button>
 
