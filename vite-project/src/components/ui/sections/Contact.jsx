@@ -46,7 +46,6 @@ export default function Contact() {
           Let's Make Something Awesome Together!
         </h2>
 
-        {/* FORM */}
         <form ref={formRef} onSubmit={sendEmail} className="mt-6">
           <div className="grid md:grid-cols-2 gap-4">
             <Input

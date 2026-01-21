@@ -47,7 +47,6 @@ export default function Hero() {
   return (
     <Reveal>
       <section id="home" className="max-w-4xl">
-        {/* Badge */}
         <span className="inline-flex items-center gap-1 text-xs border border-zinc-700 px-2 py-1 rounded">
           <Sparkles className="w-3 h-3" />
           Introduction
@@ -55,7 +54,7 @@ export default function Hero() {
 
         <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mt-4 leading-snug sm:leading-tight text-white">
           I'm Sameer{" "}
-          <span className="text-red-800 ">
+          <span className="text-red-800">
             {text}
             <span className="text-red-500 animate-pulse">|</span>
           </span>
