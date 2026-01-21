@@ -37,7 +37,7 @@ export default function Sidebar() {
       <h2 className="text-xl font-semibold">Sameer</h2>
 
       <p className="text-xs text-zinc-400 mb-3">
-        Full-Stack Web Engineer
+        Full-Stack Developer
       </p>
 
       <img
